@@ -3,3 +3,4 @@
 <a href="https://aliszhuravl.github.io/sps/web/index.html">Главная страница</a>
 
 <a href="https://aliszhuravl.github.io/sps/web/all.html">Все страницы</a>
+
