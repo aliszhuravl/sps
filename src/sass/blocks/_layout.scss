@@ -1,0 +1,89 @@
+.layout-inner {
+  width: 100%;
+  max-width: 1240px;
+  min-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-padding {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (min-width: 1441px) {
+  .main_block {
+    background-image: url('../img/fone-big.jpg');
+    background-position: 90% 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .main_block {
+    background-image: url('../img/fone-big.jpg');
+    background-position: 85% 100%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .main_block {
+    background-image: url('../img/fone-big.jpg');
+    background-position: 75% 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .layout-inner {
+    max-width: 1240px;
+    width: 100%;
+    min-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .layout-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+  /**
+    * size on tablet
+    */
+
+  .layout-inner {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .layout-padding {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+@media (max-width: 640px) {
+
+  /**
+    * size on mobile
+    */
+
+  .layout-inner {
+    min-width: 320px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .layout-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

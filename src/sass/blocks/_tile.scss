@@ -1,0 +1,127 @@
+.tile {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  &_item {
+    display: flex;
+    padding-right: 32px;
+    padding-bottom: 32px;
+    width: calc(33.3333% - 22px);
+    margin-right: 32px;
+    margin-bottom: 32px;
+      .num {
+        color: $color-main;
+        font-size: 24px;
+        line-height: 20px;
+        letter-spacing: -0.03em;
+        font-family: $font-din_medium;
+        margin-right: 32px;
+      }
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+  }
+}
+
+.tile_4 {
+  .tile_item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-bottom: 32px;
+    width: calc(25% - 24px);
+    margin-right: 32px;
+    margin-bottom: 32px;
+    .num {
+      margin-bottom: 16px;
+    }
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
+}
+
+.tile_2 {
+  .tile_item {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 63px);
+    margin-right: 125px;
+      .num {
+        margin-bottom: 20px;
+      }
+    &:nth-child(3n+3) {
+      margin-right: 125px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.row_nums {
+  .tile_item {
+    flex-direction: row;
+      .num {
+        font-size: 20px;
+      }
+  }
+}
+
+.tile_nums-up {
+  .tile_item {
+    flex-direction: column;
+    padding-right: 96px;
+      .num {
+        margin-bottom: 16px;
+        font-size: 20px;
+      }
+  }
+}
+
+.points_tile {
+  .tile_item {
+    padding-bottom: 0;
+    padding-right: 16px;
+      &:last-child {
+        padding-right: 0;
+      }
+  }
+}
+
+.page-about {
+  .tile_2.row_nums {
+    .tile_item {
+      padding-right: 60px;
+        p {
+          line-height: 24px;
+        }
+        .num {
+          margin-right: 40px;
+        }
+    }
+  }
+}
+
+.tile_matrix.tile_2 .tile_item {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 30px);
+  margin-right: 60px;
+  padding-bottom: 0;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+}
+
+.tile_column {
+  .tile_item {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
